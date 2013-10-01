@@ -6,7 +6,7 @@ ARG=argparse.ArgumentParser(\
       epilog="")
 
 ARG.add_argument('-m', '--message', help="Message to encode", dest="Message", default="lol")
-ARG.add_argument('-p', '--path', help=path to file", dest="path", default="/home/tyler/pic.png")
+ARG.add_argument('-p', '--path', help="path to file", dest="path", default="/home/tyler/pic.png")
 
 # -- Parsing passed arguments to variables -- #
 args=ARG.parse_args()
