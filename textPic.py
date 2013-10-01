@@ -21,6 +21,8 @@ def hex_to_rgb(value):
 def rgb_to_hex(rgb):
     return '#%02x%02x%02x' % rgb
 
+path = '/home/boblawblah/pics/pic.png'
+
 height = 600
 width = 800
 
@@ -52,4 +54,4 @@ for i in splitVal:
 if extraLen !=0:
     draw.text((300,400),'+'+str(extraVal),fill='white')
 
-im.save('/home/tyler/Dropbox/hello2.png','PNG')
+im.save(path,'PNG')
