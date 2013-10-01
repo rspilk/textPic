@@ -6,12 +6,14 @@ ARG=argparse.ArgumentParser(\
       epilog="")
 
 ARG.add_argument('-m', '--message', help="Message to encode", dest="Message", default="lol")
-
+ARG.add_argument('-p', '--path', help=path to file", dest="path", default="/home/tyler/pic.png")
 
 # -- Parsing passed arguments to variables -- #
 args=ARG.parse_args()
 
+
 Message = args.Message
+path = args.path
 
 def hex_to_rgb(value):
     value = value.lstrip('#')
@@ -21,7 +23,6 @@ def hex_to_rgb(value):
 def rgb_to_hex(rgb):
     return '#%02x%02x%02x' % rgb
 
-path = '/home/boblawblah/pics/pic.png'
 
 height = 600
 width = 800
